@@ -1,38 +1,280 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f7fb;
+  color: #222;
+}
+
+.main-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  gap: 32px;
+}
+
+.left-column {
+  flex: 1 1 320px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.right-column {
+  flex: 2 1 0;
+  min-width: 0;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 32px 24px 24px 24px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e3e6ee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 18px;
+}
+
+.profile-card h1 {
+  margin: 0 0 6px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22314a;
+}
+
+.profile-card h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #3b5b7e;
+}
+
+.profile-card .location {
+  color: #4b6a8a;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.profile-card .email {
+  color: #4b6a8a;
+  font-size: 0.98rem;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.social-icons a {
+  color: #3b5b7e;
+  background: #e3e6ee;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.social-icons a:hover {
+  background: #22314a;
+  color: #fff;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  padding: 12px 0;
+  background: #22314a;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.08rem;
+  width: 90%;
+  max-width: 320px;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 8px;
+}
+.resume-btn:hover {
+  background: #3b5b7e;
+}
+.resume-btn.wide {
+  width: 100%;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 24px 20px;
+  margin-top: 0;
+}
+
+.about-card h3 {
+  margin-top: 0;
+  color: #22314a;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  margin: 0 0 10px 0;
+  color: #3b5b7e;
+  font-size: 1.01rem;
+  white-space: pre-line;
+}
+
+.section {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.section h2 {
+  color: #22314a;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+}
+
+.experience-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 24px 24px 18px 24px;
+  margin-bottom: 24px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.exp-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.company-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #e3e6ee;
+}
+
+.exp-title h3 {
+  margin: 0 0 2px 0;
+  font-size: 1.13rem;
+  font-weight: 600;
+  color: #22314a;
+}
+
+.company {
+  display: block;
+  color: #3b5b7e;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.location {
+  display: block;
+  color: #4b6a8a;
+  font-size: 0.97rem;
+  margin-bottom: 2px;
+}
+
+.exp-date {
+  color: #3b5b7e;
+  font-size: 0.98rem;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.experience-card ul {
+  margin: 10px 0 10px 0;
+  padding-left: 20px;
+  color: #22314a;
+  font-size: 1.01rem;
+}
+
+.stack-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stack-tags span {
+  background: #e3e6ee;
+  color: #3b5b7e;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.97rem;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .main-wrapper {
+    flex-direction: column;
+    gap: 0;
+    padding: 24px 4px;
   }
-  to {
-    transform: rotate(360deg);
+  .left-column {
+    max-width: 100%;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .profile-card, .about-card {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-wrapper {
+    padding: 8px 0;
+  }
+  .left-column {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .profile-card, .about-card {
+    padding: 16px 8px;
+  }
+  .right-column {
+    padding: 0 2px;
+  }
+  .experience-card {
+    padding: 14px 8px 10px 8px;
+  }
+  .exp-title {
+    gap: 8px;
+  }
+  .company-logo {
+    width: 28px;
+    height: 28px;
   }
 }
