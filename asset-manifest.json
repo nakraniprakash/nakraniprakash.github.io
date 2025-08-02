@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.94d96545.css",
-    "main.js": "/static/js/main.3f5ecae6.js",
+    "main.js": "/static/js/main.cb1aae9d.js",
     "static/js/453.c8613f42.chunk.js": "/static/js/453.c8613f42.chunk.js",
     "static/media/Senior-Frontend-Developer-8-years-exp-Prakash-Nakrani.pdf": "/static/media/Senior-Frontend-Developer-8-years-exp-Prakash-Nakrani.546785406ab79293af5e.pdf",
     "static/media/profile.jpeg": "/static/media/profile.b433d8e63be418cfee3e.jpeg",
     "static/media/gtu.jpeg": "/static/media/gtu.1c3978c36d20fb0995cf.jpeg",
     "index.html": "/index.html",
     "main.94d96545.css.map": "/static/css/main.94d96545.css.map",
-    "main.3f5ecae6.js.map": "/static/js/main.3f5ecae6.js.map",
+    "main.cb1aae9d.js.map": "/static/js/main.cb1aae9d.js.map",
     "453.c8613f42.chunk.js.map": "/static/js/453.c8613f42.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94d96545.css",
-    "static/js/main.3f5ecae6.js"
+    "static/js/main.cb1aae9d.js"
   ]
 }
