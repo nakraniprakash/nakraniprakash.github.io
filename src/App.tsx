@@ -22,6 +22,12 @@ function App() {
           <h3>About Me</h3>
           <p>{profile.about}</p>
         </div>
+        <div className="skills-card">
+          <h3>Skills</h3>
+          <div className="stack-tags">
+            {profile.skills.map((skill, idx) => <span key={idx}>{skill}</span>)}
+          </div>
+        </div>
       </div>
       <div className="right-column">
         <section id="experience" className="section">
@@ -65,12 +71,6 @@ function App() {
               </div>
             </div>
           ))}
-        </section>
-        <section id="skills" className="section">
-          <h2>Skills</h2>
-          <div className="stack-tags">
-            {profile.skills.map((skill, idx) => <span key={idx}>{skill}</span>)}
-          </div>
         </section>
       </div>
     </div>
