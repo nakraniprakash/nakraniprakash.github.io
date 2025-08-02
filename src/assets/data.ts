@@ -50,7 +50,7 @@ const profile: Profile = {
   profilePhoto: ProfilePhoto,
   resume: Resume,
   title: "Senior Frontend Engineer | React & TypeScript Expert | 8+ Years Experience | Product-Minded | Driving Scalable & Business-Centric Frontend Solutions",
-  location: "Lisbon, Portugal",
+  location: "Lisbon, Portugal 🇵🇹",
   email: "mr.prakashnakrani@gmail.com",
   social: {
     linkedin: "https://linkedin.com/in/nakraniprakash",
