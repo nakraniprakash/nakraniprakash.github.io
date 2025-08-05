@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f6f7fb;
-  color: #222;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 .main-wrapper {
@@ -27,14 +27,15 @@ body {
 }
 
 .profile-card {
-  background: #fff;
+  background: var(--card-bg);
   border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px var(--shadow-color);
   padding: 32px 24px 24px 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-img {
@@ -42,35 +43,40 @@ body {
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #e3e6ee;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 4px solid var(--border-color);
+  box-shadow: 0 2px 8px var(--shadow-color);
   margin-bottom: 18px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-card h1 {
   margin: 0 0 6px 0;
   font-size: 2rem;
   font-weight: 700;
-  color: #22314a;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
 }
 
 .profile-card h2 {
   margin: 0 0 8px 0;
   font-size: 1.15rem;
   font-weight: 400;
-  color: #3b5b7e;
+  color: var(--text-tertiary);
+  transition: color 0.3s ease;
 }
 
 .profile-card .location {
-  color: #4b6a8a;
+  color: var(--text-quaternary);
   font-size: 1rem;
   margin-bottom: 2px;
+  transition: color 0.3s ease;
 }
 
 .profile-card .email {
-  color: #4b6a8a;
+  color: var(--text-quaternary);
   font-size: 0.98rem;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 .social-icons {
@@ -81,41 +87,42 @@ body {
 }
 
 .social-icons a {
-  color: #3b5b7e;
-  background: #e3e6ee;
+  color: var(--text-tertiary);
+  background: var(--border-color);
   border-radius: 50%;
   width: 38px;
   height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.3s, color 0.3s;
   font-size: 1.2rem;
 }
 
 .social-icons a:hover {
-  background: #22314a;
-  color: #fff;
+  background: var(--accent-primary);
+  color: var(--bg-secondary);
 }
 
 .resume-btn {
   display: inline-block;
   margin: 0 auto 0 auto;
   padding: 12px 0;
-  background: #22314a;
-  color: #fff;
+  background: var(--accent-primary);
+  color: var(--bg-secondary);
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.08rem;
   width: 90%;
   max-width: 320px;
-  transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px var(--shadow-color);
   margin-bottom: 8px;
 }
 .resume-btn:hover {
-  background: #3b5b7e;
+  background: var(--accent-secondary);
+  box-shadow: 0 4px 12px var(--shadow-color-hover);
 }
 .resume-btn.wide {
   width: 100%;
@@ -123,26 +130,29 @@ body {
 
 .about-card,
 .skills-card {
-  background: #fff;
+  background: var(--card-bg);
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px var(--shadow-color);
   padding: 24px 20px;
   margin-top: 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-card h3,
 .skills-card h3 {
   margin-top: 0;
-  color: #22314a;
+  color: var(--text-secondary);
   font-size: 1.2rem;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 .about-card p {
   margin: 0 0 10px 0;
-  color: #3b5b7e;
+  color: var(--text-tertiary);
   font-size: 1.01rem;
   white-space: pre-line;
+  transition: color 0.3s ease;
 }
 
 .section {
@@ -153,17 +163,19 @@ body {
 }
 
 .section h2 {
-  color: #22314a;
+  color: var(--text-secondary);
   font-size: 1.4rem;
   margin-bottom: 18px;
+  transition: color 0.3s ease;
 }
 
 .experience-card {
-  background: #fff;
+  background: var(--card-bg);
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px var(--shadow-color);
   padding: 24px 24px 18px 24px;
   margin-bottom: 24px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .exp-header {
@@ -184,42 +196,48 @@ body {
   height: 38px;
   border-radius: 8px;
   object-fit: cover;
-  background: #e3e6ee;
+  background: var(--border-color);
+  transition: background-color 0.3s ease;
 }
 
 .exp-title h3 {
   margin: 0 0 2px 0;
   font-size: 1.13rem;
   font-weight: 600;
-  color: #22314a;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
 }
 
 .company {
   display: block;
-  color: #3b5b7e;
+  color: var(--text-tertiary);
   font-size: 1rem;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .location {
   display: block;
-  color: #4b6a8a;
+  color: var(--text-quaternary);
   font-size: 0.97rem;
   margin-bottom: 2px;
+  transition: color 0.3s ease;
 }
 
 .exp-date {
-  color: #3b5b7e;
+  color: var(--text-tertiary);
   font-size: 0.98rem;
   font-weight: 500;
   margin-top: 2px;
+  transition: color 0.3s ease;
 }
 
 .experience-card ul {
   margin: 10px 0 10px 0;
   padding-left: 20px;
-  color: #22314a;
+  color: var(--text-secondary);
   font-size: 1.01rem;
+  transition: color 0.3s ease;
 }
 
 .stack-tags {
@@ -230,12 +248,13 @@ body {
 }
 
 .stack-tags span {
-  background: #e3e6ee;
-  color: #3b5b7e;
+  background: var(--border-color);
+  color: var(--text-tertiary);
   border-radius: 6px;
   padding: 4px 12px;
   font-size: 0.97rem;
   font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media (max-width: 900px) {

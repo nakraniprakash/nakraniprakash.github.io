@@ -1,3 +1,35 @@
+:root {
+  /* Light theme variables */
+  --bg-primary: #f6f7fb;
+  --bg-secondary: #ffffff;
+  --card-bg: #ffffff;
+  --text-primary: #222;
+  --text-secondary: #22314a;
+  --text-tertiary: #3b5b7e;
+  --text-quaternary: #4b6a8a;
+  --accent-primary: #22314a;
+  --accent-secondary: #3b5b7e;
+  --border-color: #e3e6ee;
+  --shadow-color: rgba(0, 0, 0, 0.07);
+  --shadow-color-hover: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] {
+  /* Dark theme variables */
+  --bg-primary: #0f1419;
+  --bg-secondary: #1a1f29;
+  --card-bg: #1a1f29;
+  --text-primary: #e6e6e6;
+  --text-secondary: #ffffff;
+  --text-tertiary: #b8c5d1;
+  --text-quaternary: #8b9bb0;
+  --accent-primary: #4a9eff;
+  --accent-secondary: #6bb6ff;
+  --border-color: #2a3441;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --shadow-color-hover: rgba(0, 0, 0, 0.4);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +37,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 code {

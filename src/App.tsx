@@ -1,9 +1,12 @@
 import './App.css';
 import profile from './assets/data';
+import ThemeToggle from './components/ThemeToggle';
 
 function App() {
   return (
-    <div className="main-wrapper">
+    <>
+      <ThemeToggle />
+      <div className="main-wrapper">
       <div className="left-column">
         <div className="profile-card">
           <img src={profile.profilePhoto} alt="Profile" className="profile-img" />
@@ -74,6 +77,7 @@ function App() {
         </section>
       </div>
     </div>
+    </>
   );
 }
 
