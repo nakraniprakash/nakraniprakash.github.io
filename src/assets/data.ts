@@ -65,7 +65,7 @@ const profile: Profile = {
       title: "Senior Frontend Engineer",
       company: "Indiecampers",
       location: "Lisbon, Portugal",
-      date: "Aug 2023 - Present",
+      date: "Aug 2023 - Jan 2026",
       logo: Indiecampers,
       description: [
         "Improved page load speed by 25% by introducing a BFF layer for the client area, enhancing user experience and reducing latency.",
