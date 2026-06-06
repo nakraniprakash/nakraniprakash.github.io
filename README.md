@@ -7,4 +7,7 @@ yarn start
 
 # Build for production
 yarn build
+
+# Deploy to GitHub Pages (pushes build/ to gh-pages branch)
+yarn deploy
 ```
