@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.92681e25.css",
-    "main.js": "/static/js/main.cdd782d7.js",
+    "main.js": "/static/js/main.f45096ae.js",
     "static/js/453.c8613f42.chunk.js": "/static/js/453.c8613f42.chunk.js",
     "static/media/profile.jpeg": "/static/media/profile.351e854c474801344aec.jpeg",
-    "static/media/Senior-Frontend-Developer-8-years-exp-Prakash-Nakrani.pdf": "/static/media/Senior-Frontend-Developer-8-years-exp-Prakash-Nakrani.546785406ab79293af5e.pdf",
+    "static/media/Senior-Frontend-Developer-10-years-exp-Prakash-Nakrani.pdf": "/static/media/Senior-Frontend-Developer-10-years-exp-Prakash-Nakrani.03cba02b96f59bbfeefa.pdf",
     "static/media/gtu.jpeg": "/static/media/gtu.1c3978c36d20fb0995cf.jpeg",
     "index.html": "/index.html",
     "main.92681e25.css.map": "/static/css/main.92681e25.css.map",
-    "main.cdd782d7.js.map": "/static/js/main.cdd782d7.js.map",
+    "main.f45096ae.js.map": "/static/js/main.f45096ae.js.map",
     "453.c8613f42.chunk.js.map": "/static/js/453.c8613f42.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92681e25.css",
-    "static/js/main.cdd782d7.js"
+    "static/js/main.f45096ae.js"
   ]
 }
