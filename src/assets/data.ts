@@ -6,7 +6,7 @@ import Xinfin from './xinfin.jpeg';
 import Chameleon from './chameleon.jpeg';
 import Gtu from './gtu.jpeg';
 import ProfilePhoto from './profile.jpeg';
-import Resume from './Senior-Frontend-Developer-8-years-exp-Prakash-Nakrani.pdf';
+import Resume from './Senior-Frontend-Developer-10-years-exp-Prakash-Nakrani.pdf';
 
 export interface SocialLinks {
   linkedin: string;
@@ -49,7 +49,7 @@ const profile: Profile = {
   name: "Prakash Nakrani",
   profilePhoto: ProfilePhoto,
   resume: Resume,
-  title: "Senior Frontend Engineer | React & TypeScript Expert | 8+ Years Experience | Product-Minded | Driving Scalable & Business-Centric Frontend Solutions",
+  title: "Senior Frontend Engineer | React & TypeScript Expert | 10 Years Experience | Product-Minded | Driving Scalable & Business-Centric Frontend Solutions",
   location: "Lisbon, Portugal 🇵🇹",
   email: "mr.prakashnakrani@gmail.com",
   social: {
